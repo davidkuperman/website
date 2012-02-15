@@ -11,6 +11,8 @@ Website::Application.routes.draw do
 
    match '/services', :to => "pages#services"
 
+  match '/news', :to => "pages#news"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
