@@ -1,0 +1,35 @@
+<header>
+  <div class="topbar round">
+    <p>Tel: 1 2149749 (Bogota, Colombia) | Mail: info@yoptic.com</p>
+    <ul class="soporte">
+      <li><a href="#">Soporte tecnico</a></li>
+    </ul>
+    <ul class="acceso">
+    <li><a href="#">Login</a></li>
+    </ul>
+    <br class="clear" />
+  </div>
+
+  <div class="topnav">
+      <ul>
+        <li><%= link_to "Contactenos", contact_path %></li>
+        <li><a href="#">Noticias</a>
+        </li>
+        <li><%= link_to "Servicios", services_path %></li>
+        <li><%= link_to "Plataforma", products_path %>
+        <ul>
+            <li><%= link_to "Ediciones", editions_path %></li>
+            <li><%= link_to "Beneficios", benefits_path %></li>
+          </ul></li>
+         <li><%= link_to "Compania", about_path %></li>
+      </ul>
+    </div>
+
+      <div class="logo">
+      <%logo = image_tag("logo.png", :alt => "Logo", :class => "")%>
+      <%= link_to logo, root_path %>
+    </div>
+  
+    <br class="clear" />
+
+</header>

@@ -1,0 +1,77 @@
+
+    <div class="slogan">
+    <h1>Yoptic es la plataforma online para administrar opticas y llevarlas al exito.</h1>
+    </div>
+	<!-- end #logo -->
+    <div class="slideshow">
+	<!-- start -->
+	<div class="foobar">
+		<div class="col1"><a href="#" class="previous">&nbsp;</a></div>
+		<div class="col2">
+			<div class="viewer">
+				<div class="reel">
+					<div class="slide"><img src="images/5.jpg" width="730" height="335" alt="" /> <span>Con Yoptic te impulsas para que tengas un crecimiento constante.</span> </div>
+                                        <div class="slide"><img src="images/4.jpg" width="730" height="335" alt="" /> <span>Con Yoptic encuentras la excelencia operacional.</span> </div>
+					<div class="slide"><img src="images/7.jpg" width="730" height="335" alt="" /> <span>Con Yoptic mejoras las relaciones con tus clientes.</span> </div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col3"><a href="#" class="next">&nbsp;</a></div>
+	</div>
+	<script type="text/javascript">
+
+						$('.foobar').slidertron({
+							viewerSelector:			'.viewer',
+							reelSelector:			'.viewer .reel',
+							slidesSelector:			'.viewer .reel .slide',
+							navPreviousSelector:	'.previous',
+							navNextSelector:		'.next',
+							navFirstSelector:		'.first',
+							navLastSelector:		'.last'
+						});
+
+					</script>
+	<!-- end -->
+</div>
+
+<div class="wrapper col4">
+
+    <div class="column">
+      <div class="holder">
+        <h2>Plataforma</h2>
+        <ul class="latestnews">
+          <li><img class="imgl" src="images/pla.jpg" alt="" />
+            <p><strong>Facil, segura y productiva.</strong></p>
+            <p>Nuestra plataforma hara crecer tu negocio y mejorar tus resultados.</p>
+            <p class="readmore"><%= link_to "Mas informacion", products_path %></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+         <div class="column">
+      <div class="holder">
+        <h2>Ediciones</h2>
+        <ul class="latestnews">
+          <li><img class="imgl" src="images/edi.jpg" alt="" />
+            <p><strong>Contamos con 3 ediciones de la plataforma.</strong></p>
+            <p>Escoge la edicion que mas necesites.</p>
+            <p class="readmore"><%= link_to "Mas informacion", editions_path %></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+         <div class="column">
+      <div class="holder">
+        <h2>Beneficios</h2>
+        <ul class="latestnews">
+          <li><img class="imgl" src="images/ben.jpg" alt="" />
+            <p><strong>Financieros, operativos y administrativos.</strong></p>
+            <p>Yoptic te ofrece grandes beneficios a un bajo costo.</p>
+            <p class="readmore"><%= link_to "Mas informacion", benefits_path %></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br class="clear" />
+</div>
