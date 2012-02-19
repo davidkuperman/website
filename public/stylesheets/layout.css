@@ -557,12 +557,13 @@ line-height: 240%;
   font-family: Arial, Helvetica, sans-serif;
 font-size: 14px;
 line-height: 16px;
-list-style: none;
-display: list-item;
+display: inline;
+list-style: none outside none;
+margin-left: 20px;
 }
 
 .politicas a, .politicas a:visited, .politicas a:hover {
-  line-height: 16px;
+  line-height: 240%;
 list-style: none;
 color: white;
 outline: none;
@@ -603,51 +604,54 @@ border-bottom: 1px dotted #CCC;
 
 	}
 
-.noticias .latestnews{
-	display:block;
-	width:100%;
-	margin:0;
-	padding:0;
-	list-style:none;
-	}
-
-
-.noticias .latestnews .imgl{
-	margin:0 10px 100px 0;
-	padding:4px;
-        border: 1px solid #666;
-        clear: left;
-        float: left;
-	}
-
-.noticias .latestnews p {
-            margin:0 20px 0px 0;
-	padding:0 20px 0px 0px;
-        margin-top: 0;
-	line-height: 180%;
-	text-align: justify;
-        font-size: 14px;
-        display: block;
-
+.noticias-imagen {
+width: 270px;
+float: left;
+}
+.noticias-img-border {
+border: 5px solid #E8EBE6;
+width: 242px;
+height: 116px;
+border-image: initial;
 }
 
-.noticias .latestnews p.readmore {
-        margin: 10px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-        text-align: justify;
-        line-height: 180%;
-        display: block;
-width: 100%;
-font-weight: bold;
-
-
+.noticias-img-border:hover {
+border: 5px solid #A94343;
+border-image: initial;
 }
 
-.noticias .latestnews p.readmore a{
-    color: #982216;
-    outline: none;
+.noticias-contenido {
+width: 160px;
+float: left;
+}
+
+a.noticias-link:visited {
 text-decoration: none;
-text-align: justify;
-line-height: 180%;
-font-weight: bold;
+color: #993D3D;
+}
+
+a.noticias-link {
+font-weight:normal;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 16px;
+text-decoration: none;
+color: #993D3D;
+}
+
+a.noticias:link {
+text-decoration: none;
+color: #993D3D;
+}
+
+.noticias-texto {
+font-weight:normal;
+font-family:Georgia, "Times New Roman", Times, serif;
+color: #5A5A5A;
+font-size: 14px;
+line-height: 16px;
+}
+
+.noticias-spacer {
+height: 30px;
+clear: both;
 }

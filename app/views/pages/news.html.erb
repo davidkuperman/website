@@ -6,9 +6,16 @@
 <h1>Noticias</h1>
 
 <div class="noticias">
-</div>
+            	<div class="noticias-imagen">
+                	<%imagen= image_tag("noticia.png", :alt => "noticia 1", :class => "noticias-img-border") %>
+                        <%= link_to imagen, news1_path, :class => "noticias-img"%>
+                </div>
+                <div class="noticias-contenido">
+                	<div><%= link_to "Yoptic lanza nueva plataforma", news1_path, :class => "noticias-link", :target => "blank" %></div>
+                        <div class="noticias-texto"><strong>Yoptic</strong> lanza al mercado la plataforma para la gestion de opticas que has estado esperando.</div>
+                </div>
+                <div class="noticias-spacer">&nbsp;</div>
+            </div>
        
-
-
 <br/>
 </div>

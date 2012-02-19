@@ -11,7 +11,15 @@ Website::Application.routes.draw do
 
    match '/services', :to => "pages#services"
 
+  match '/support', :to => "pages#support"
+
   match '/news', :to => "pages#news"
+
+  match '/news1', :to => "pages#news1"
+
+   match '/news2', :to => "pages#news2"
+
+    match '/privacy', :to => "pages#privacy"
 
 
   # The priority is based upon order of creation:
