@@ -1,0 +1,52 @@
+<%= form_for(@request) do |f| %>
+  <% if @request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@request.errors.count, "error") %> prohibieron esta solicitud de ser salvada:</h2>
+
+      <ul>
+      <% @request.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombres %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :apellidos %><br />
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :empresa %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br />
+    <%= f.text_field :role %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :comentarios_y_preguntas %><br />
+    <%= f.text_area :comments %>
+  </div>
+
+  <% if User.find_by_id(session[:user_id])%>
+  <div>
+   <%= f.label :check %>
+    <%=  f.check_box :check %>
+  </div>
+  <%end%>
+  <div class="actions">
+    <%= f.submit "enviar comentarios" %>
+  </div>
+<% end %>

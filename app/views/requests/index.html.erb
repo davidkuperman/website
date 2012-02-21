@@ -1,0 +1,39 @@
+<h1>Comentarios y preguntas</h1>
+
+<table>
+  <tr>
+    <th>Nombres</th>
+    <th>Apellidos</th>
+    <th>Empresa</th>
+    <th>Cargo</th>
+    <th>Email</th>
+    <th>Telefono</th>
+    <th>Comentarios</th>
+    <th>Fecha</th>
+    <th>Check</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requests.each do |request| %>
+  <tr>
+    <td><%= request.name %></td>
+    <td><%= request.lastname %></td>
+    <td><%= request.company %></td>
+    <td><%= request.role %></td>
+    <td><%= request.email %></td>
+    <td><%= request.phone %></td>
+    <td><%= request.comments %></td>
+    <td><%= request.created_at.in_time_zone('Eastern Time (US & Canada)') %></td>
+     <td><%= request.check %></td>
+    <td><%= link_to 'Show', request %></td>
+    <td><%= link_to 'Edit & Check', edit_request_path(request) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Request', new_request_path %>
+<p><%= will_paginate @requests %></p>

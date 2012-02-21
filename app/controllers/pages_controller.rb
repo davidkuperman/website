@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+
+  skip_before_filter :authorize
+
   def home
     @title = "Home"
   end

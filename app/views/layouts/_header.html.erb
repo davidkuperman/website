@@ -3,9 +3,12 @@
     <p>Tel: 3153985990 (Bogota, Colombia) | Mail: info@yoptic.com</p>
     <ul class="soporte">
       <li><%= link_to "Soporte tecnico", support_path %></li>
+      <% if session[:user_id] %>
+<%= button_to 'Logout', logout_path, :method => :delete %>
+<% end %>
     </ul>
     <ul class="acceso">
-    <li><a href="#">Login</a></li>
+    <li><a href="#">Login plataforma</a></li>
     </ul>
     <br class="clear" />
   </div>

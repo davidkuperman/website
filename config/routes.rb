@@ -1,4 +1,18 @@
 Website::Application.routes.draw do
+  match '/admin', :to => "admin#index"
+controller :sessions do
+get 'login' => :new
+post 'login' => :create
+delete 'logout' => :destroy
+end
+
+
+  resources :users
+
+  resources :requests
+  match '/check', :to => "requests#check"
+
+
   match '/about', :to => "pages#about"
 
   match '/contact', :to => "pages#contact"

@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombres:</b>
+  <%= @request.name %>
+</p>
+
+<p>
+  <b>Apellidos:</b>
+  <%= @request.lastname %>
+</p>
+
+<p>
+  <b>Empresa:</b>
+  <%= @request.company %>
+</p>
+
+<p>
+  <b>Cargo:</b>
+  <%= @request.role %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @request.email %>
+</p>
+
+<p>
+  <b>Telefono:</b>
+  <%= @request.phone %>
+</p>
+
+<p>
+  <b>Comentarios:</b>
+  <%= @request.comments %>
+</p>
+
+
+<p>
+  <b>Check:</b>
+  <%= @request.check %>
+</p>
+
+
+<%= link_to 'Editar', edit_request_path(@request) %> |
+<%= link_to 'Atras', requests_path%>

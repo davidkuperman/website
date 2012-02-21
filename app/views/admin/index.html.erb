@@ -1,0 +1,10 @@
+<div class="contenido">
+
+
+<h1>Bemvindo</h1>
+It's <%= Time.now.in_time_zone('Eastern Time (US & Canada)') %><br/>
+Hay <strong><%= pluralize(@total_request, "comentario") %></strong>
+
+<p class="readmore"><%= link_to "Ver los comentarios", requests_path %></p>
+
+</div>
