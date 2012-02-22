@@ -1,6 +1,6 @@
 class Request < ActiveRecord::Base
 
-  default_scope :order => 'created_at asc'
+  default_scope :order => 'created_at desc'
 
  
   validates :name, :lastname, :email, :phone, :company, :role, :comments, :presence => { :message => "no puede ser vacio"}
